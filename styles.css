@@ -1,1 +1,32 @@
 /*  your css code here. If applicable */
+.radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Style for all radio labels */
+    .radio-group label {
+      cursor: pointer;
+    }
+
+    /* Red color for even-positioned radio labels */
+     .radio-group label {
+      cursor: pointer;
+      color: black; /* Default black */
+    }
+
+    /* Red for 2nd, 4th, and 6th options */
+    .radio-group div:nth-child(2) label,
+    .radio-group div:nth-child(4) label,
+    .radio-group div:nth-child(6) label {
+      color: red;
+    }
+
+
+    /* Optional: Dim disabled labels */
+    .radio-group input:disabled + label {
+      color: grey;
+      cursor: not-allowed;
+    }
